@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraLuz</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <div class="topnav">
+        <a id="in" class="active" href="index.html">Calcular</a>
+        <a id="in" href="information.html">Información</a>
+    </div>
+</head>
+<body >
+    <div class="center">
+        <div id="start">
+            <h1>Medir la velocidad de la luz con un microondas</h1>
+        </div>
+        <hr>
+        <article id="instructions">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia odit voluptas deleniti voluptatum eaque, ad quod repellendus ratione aliquid, adipisci eveniet iste nulla illo molestias. Ducimus deleniti minima sit.</p>
+        </article>
+        <br>
+        <div class="inputbox">
+            <input type="number" name="freq" required="required" id="f">
+            <span>Frecuencia(MHz)</span>
+        </div>
+        <div class="inputbox">
+            <input type="number" name="lambda" required="required" id="l_onda">
+            <span>Longitud de onda(cm)</span>
+        </div>
+        <div class="inputbox">
+            <button type="button" onclick="getInputValue();">Enviar</button>
+        </div>
+        <h3 id="resa">
+            Resultado:
+        </h3>
+        <h5 id="res"></h5>
+        <h5 id="err"></h5>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

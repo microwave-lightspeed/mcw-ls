@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+.topnav{
+    position: absolute;
+    top: 30px;
+    padding: 20px 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: "Roboto", cursive;
+    font-weight: 700;
+    box-shadow: 5px 10px;  
+    border-left: 5px solid #83D6DE;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#in {
+  color: #0060B6;
+  text-decoration: none;
+  font-size: larger;
+}
+
+#in:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;
+  
+}
+
+#in + #in {
+  margin-left: 50px;
+}
+
+hr{
+  border: 3px solid #83D6DE;
+  background-color: #83D6DE;
+}
+
+#intro {
+  font-size: medium;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #8870FF, #83D6DE);
+  font-family: "Roboto", cursive;
+  
+}
+
+.center {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 10px;
+}
+
+.center h1 {
+  font-size: 3em;
+  border-left: 5px solid #83D6DE;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: 2.5em;
+  border-left: 5px solid #83D6DE;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+h5{
+  font-size: 2.5em;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  font-weight: 700;
+  padding-left: 1px;
+  display:inline;
+}
+#resa {
+  display:inline;
+}  
+
+
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  box-shadow: 5px 10px;  
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="button"] {
+  width: 75%;
+  height: 75%;
+  background: #83D6DE;
+  color: #fff;
+  border: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 10px black;
+}
+.center .inputbox:hover [type="button"] {
+  background: linear-gradient(45deg, #8870FF, dodgerblue);
+}
