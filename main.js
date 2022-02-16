@@ -12,5 +12,5 @@ function getInputValue(){
     ea = ea/c * 100;
     ea = ea.toFixed(2);
     var target = document.getElementById("err");
-    target.innerHTML = "     Error: "+ea+"%";
+    target.innerHTML = "     *Error Relatiu: "+ea+"%";
 }
