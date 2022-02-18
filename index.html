@@ -1,113 +1,127 @@
 <!DOCTYPE html>
 <html lang="ca">
-	<head>
-		<title>Fotons al forn</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <script src="main.js"></script>
-  </head>
-	<body class="is-preload">
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <h1>Fotons al Forn</h1>
-        <p>Mesurar la velocitat de la llum amb un microones</p>
-      </header>
 
-      <nav id="nav">
-        <ul>
-          <li><a id="in" class="active" href="index.html">Calculadora</a></li>
-          <li><a id="in" href="information.html">Informació</a></li>
-          <li><a id="in" href="material.html">Materials</a></li>
-        </ul>
-      </nav>
+<head>
+  <title>Fotons al forn</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+  <script src="main.js"></script>
+</head>
 
-      <!-- Main -->
-      <div id="main">
-        <!-- Content -->
-					<section id="first" class="main">
-            <!-- Text -->
-							<section>
-                <header class="major">
-                  <h1>Fotons al Forn</h1>
-                </header>
-                  <p>En aquest projecte es pretén determinar la velocitat a la que viatja la llum en l’aire amb ajuda d’un forn
-                    microones i d’una web amb funció de calculadora, desenvolupada pels membres de l’equip.
-                    El principal objectiu es comparar el nostre resultat amb les diferents mesures realitzades històricament
-                    d’aquesta constant, per observar l’exactitud i precisió dels nostre mètode. Al mateix temps pretenem entendre el
-                    funcionament d’un forn de microones i la seua aplicació en la cuina. Altre objectiu és relacionar el nostre projecte
-                    amb les noves tecnologies dissenyant una web, que permeta fer els càlculs i reproduir l’experiment en casa.</p>
-              </section>
+<body class="is-preload">
+  <div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+      <h1>Fotons al Forn</h1>
+      <p>Mesurar la velocitat de la llum amb un microones</p>
+    </header>
 
-          </section>
-          <section id="second" class="main">
-            <header class="major">
-              <h1>Calculadora</h1>
-            </header>
-              <p> </p>
-              <!-- Form -->
-                <section>
-                    <div class="row gtr-uniform">
-                      <div class="col-6 col-12-small">
-                        <input type="number" name="freq" value="" placeholder="Frecuencia(Mhz)" id="f"/>
-                      </div>
-                      <p> </p>
-                      <div class="col-6 col-12-small">
-                        <input type="number" name="lambda" value="" placeholder="Medida entre Manchas(cm)" id="l_onda"/>
-                      </div>
-                      <div class="col-12">
-                        <div class="inputbox">
-                            <button class="button primary" type="button" onclick="getInputValue();">Enviar</button>
-                        </div>
-                    </div>
-                    <h2 id="resa">
-                        Resultat:
-                    </h2>
-                    <h2 id="res"></h2>
-                    <h2 id="err"></h2>
-                    <p>*Segons la medició actual de la velocitat de la llum: https://es.wikipedia.org/wiki/Luz#Velocidad_finita</p>  
-                  </div>
-               </section>
-               </section>
-               <section id="third" class="main">
-                  <section>
-                    <header class="major">
-                      <h1>Informació Teòrica</h1>
-                    </header>
-                  <div class>  
-                    <a id="in" href="information.html">Més informació</a>
-                    <a id="in" href="material.html">Materials</a>
-                  </div>
-                  </section>
-              </section>
+    <nav id="nav">
+      <ul>
+        <li><a id="in" class="active" href="index.html">Calculadora</a></li>
+        <li><a id="in" href="information.html">Informació</a></li>
+        <li><a id="in" href="material.html">Materials</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Content -->
+      <section id="first" class="main">
+        <!-- Text -->
+        <section>
+          <header class="major">
+            <h1>Fotons al Forn</h1>
+          </header>
+          <p>En aquest projecte es pretén determinar la velocitat a la que viatja la llum en l’aire amb ajuda d’un forn
+            microones i d’una web amb funció de calculadora, desenvolupada pels membres de l’equip.
+            El principal objectiu es comparar el nostre resultat amb les diferents mesures realitzades històricament
+            d’aquesta constant, per observar l’exactitud i precisió dels nostre mètode. Al mateix temps pretenem
+            entendre el
+            funcionament d’un forn de microones i la seua aplicació en la cuina. Altre objectiu és relacionar el nostre
+            projecte
+            amb les noves tecnologies dissenyant una web, que permeta fer els càlculs i reproduir l’experiment en casa.
+          </p>
+        </section>
+
+      </section>
+      <section id="second" class="main">
+        <header class="major">
+          <h1>Calculadora</h1>
+        </header>
+        <p> </p>
+        <!-- Form -->
+        <section>
+          <div class="row gtr-uniform">
+            <div class="col-6 col-12-small">
+              <input type="number" name="freq" value="" placeholder="Frecuencia(Mhz)" id="f" />
+            </div>
+            <p> </p>
+            <div class="col-6 col-12-small">
+              <input type="number" name="lambda" value="" placeholder="Medida entre Manchas(cm)" id="l_onda" />
+            </div>
+            <div class="col-12">
+              <div class="inputbox">
+                <button class="button primary" type="button" onclick="getInputValue();">Enviar</button>
+              </div>
+            </div>
+            <h2 id="resa">
+              Resultat:
+            </h2>
+            <h2 id="res"></h2>
+            <h2 id="err"></h2>
+            <p>*Segons la medició actual de la velocitat de la llum: https://es.wikipedia.org/wiki/Luz#Velocidad_finita
+            </p>
           </div>
-        <!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-						</section>
-						<section>
-							<h2>Visita el nostre Instagram i Github</h2>
-							<ul class="icons">
-								<li><a href="https://www.instagram.com/ies_benicalap/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/microwave-lightspeed/mcw-ls" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Developed by: <a href="https://mestreacasa.gva.es/web/iesbenicalap">IES Benicalap</a> Styles: <a href="https://html5up.net">HTML5 UP</a> .</p>
-					</footer>
+        </section>
+      </section>
+      <section id="third" class="main">
+        <section>
+          <header class="major">
+            <h1>Informació Teòrica</h1>
+          </header>
+          <div class>
+            <a id="in" href="information.html">Més informació</a>
+            <a id="in" href="material.html">Materials</a>
+          </div>
+        </section>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <section>
+        <h2>Aliquam sed mauris</h2>
+        <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore
+          veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae
+          tincidunt odio.</p>
+      </section>
+      <section>
+        <h2>Visita el nostre Instagram i Github</h2>
+        <ul class="icons">
+          <li><a href="https://www.instagram.com/ies_benicalap/" class="icon brands fa-instagram alt"><span
+                class="label">Instagram</span></a></li>
+          <li><a href="https://github.com/microwave-lightspeed/mcw-ls" class="icon brands fa-github alt"><span
+                class="label">GitHub</span></a></li>
+        </ul>
+      </section>
+      <p class="copyright">&copy; Developed by: <a href="https://mestreacasa.gva.es/web/iesbenicalap">IES Benicalap</a>
+        Styles: <a href="https://html5up.net">HTML5 UP</a> .</p>
+    </footer>
 
-			</div>
-          <!--Tonto-->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+  </div>
+  <!--Tonto-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 
-      </body>
+</body>
+
 </html>
